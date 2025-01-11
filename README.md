@@ -54,6 +54,23 @@ $ npm run start:prod
 * Configurable timeouts
 * Efficient key management
 
+## To use this implementation:
+
+```bash
+
+npm install @nestjs/cache-manager cache-manager cache-manager-redis-store @nestjs/config pino prom-client
+```
+
+## Configure your Environment variables in ```.env```
+
+```env
+
+REDIS_HOST=your-redis-endpoint.cache.amazonaws.com
+REDIS_PORT=6379
+CACHE_TTL=600
+CACHE_MAX_ITEMS=100000
+```
+
 ## Best Practices Implemented:
 
 ### Separation of Concerns:
